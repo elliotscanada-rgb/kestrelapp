@@ -1,0 +1,190 @@
+/* Prices Page Hero */
+.prices-hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+  text-align: center;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.prices-hero h1 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.prices-hero p {
+  font-size: 1.1rem;
+  color: var(--off-white);
+}
+
+/* Prices Section */
+.prices-section {
+  padding: 5rem 0;
+  background: var(--dark-bg);
+}
+
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.price-card {
+  background: var(--darker-bg);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--dark-border);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+}
+
+.price-card h3 {
+  font-size: 1.1rem;
+  color: var(--off-white);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.price-value {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.price-change {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.price-change.up {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.price-change.down {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.prices-disclaimer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Pricing Info */
+.pricing-info {
+  padding: 5rem 0;
+  background: var(--darker-bg);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-card {
+  background: var(--dark-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--dark-border);
+}
+
+.info-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  color: var(--off-white);
+  line-height: 1.7;
+}
+
+/* Estimator Section */
+.estimator-section {
+  padding: 5rem 0;
+  background: var(--dark-bg);
+}
+
+.estimator-card {
+  max-width: 600px;
+  margin: 3rem auto 0;
+  background: var(--darker-bg);
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid var(--dark-border);
+}
+
+.estimator-form {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--off-white);
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem 1rem;
+  background: var(--dark-bg);
+  border: 1px solid var(--dark-border);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.form-group input::placeholder {
+  color: var(--muted);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.estimator-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .prices-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .estimator-card {
+    padding: 2rem;
+  }
+}

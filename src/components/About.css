@@ -1,0 +1,130 @@
+.about {
+  background: var(--dark);
+}
+
+/* Intro grid */
+.about__intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-bottom: 5rem;
+}
+
+.about__intro-text p {
+  color: rgba(245,240,232,0.72);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about__intro-text em {
+  color: var(--gold);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Mission / Vision cards */
+.about__intro-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about__card {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--dark-border);
+  background: var(--dark-card);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.about__card:hover {
+  border-color: var(--gold-dark);
+  transform: translateY(-3px);
+}
+
+.about__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+}
+
+.about__card--mission::before { background: linear-gradient(180deg, var(--gold), transparent); }
+.about__card--vision::before  { background: linear-gradient(180deg, var(--gold-dark), transparent); }
+
+.about__card-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.about__card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.about__card p {
+  font-size: 0.9rem;
+  color: rgba(245,240,232,0.7);
+  line-height: 1.75;
+}
+
+/* Values */
+.about__values-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about__values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.about__value-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.about__value-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(201,168,76,0.1);
+}
+
+.about__value-icon {
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about__value-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+
+.about__value-card p {
+  font-size: 0.875rem;
+  color: rgba(245,240,232,0.65);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .about__intro {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

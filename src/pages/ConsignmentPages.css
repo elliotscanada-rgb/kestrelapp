@@ -1,0 +1,479 @@
+/* Product Categories */
+.gold-products {
+  padding: 5rem 0;
+  background: var(--darker-bg);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.product-card {
+  background: var(--dark-bg);
+  border: 1px solid var(--dark-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 40px rgba(212, 175, 55, 0.2);
+}
+
+.product-card__image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-card__image img {
+  transform: scale(1.08);
+}
+
+.product-card__content {
+  padding: 2rem;
+}
+
+.product-card__content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.product-card__content > p {
+  font-size: 0.95rem;
+  color: var(--off-white);
+  margin-bottom: 1.25rem;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-list li {
+  font-size: 0.9rem;
+  color: var(--off-white);
+  padding: 0.4rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.product-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .product-card__image {
+    height: 200px;
+  }
+
+  .product-card__content {
+    padding: 1.5rem;
+  }
+
+  .product-card__content h3 {
+    font-size: 1.2rem;
+  }
+}
+.consignment-hero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.consignment-hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.consignment-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(10, 10, 10, 0.6));
+  z-index: 2;
+}
+
+.consignment-hero__content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: var(--white);
+}
+
+.consignment-hero__title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.consignment-hero__subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  color: var(--off-white);
+}
+
+/* Introduction Section */
+.consignment-intro {
+  padding: 5rem 0;
+  background: var(--dark-bg);
+}
+
+.consignment-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.consignment-intro__text h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--gold);
+}
+
+.consignment-intro__text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--off-white);
+  margin-bottom: 1.5rem;
+}
+
+.consignment-intro__image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.consignment-intro__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Gold Types Section */
+.gold-types {
+  padding: 5rem 0;
+  background: var(--darker-bg);
+}
+
+.gold-types__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.gold-types__card {
+  background: var(--dark-bg);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--dark-border);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.gold-types__card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+}
+
+.gold-types__icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.gold-types__card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+.gold-types__card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gold-types__card ul li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--off-white);
+  line-height: 1.6;
+}
+
+.gold-types__card ul li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+/* Process Section */
+.process-section {
+  padding: 5rem 0;
+  background: var(--dark-bg);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.process-step {
+  text-align: center;
+  position: relative;
+}
+
+.process-step__number {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), #c8a952);
+  color: var(--dark-bg);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+}
+
+.process-step h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.process-step p {
+  color: var(--off-white);
+  line-height: 1.7;
+}
+
+/* Features Section */
+.features-section {
+  padding: 5rem 0;
+  background: var(--darker-bg);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background: var(--dark-bg);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--dark-border);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: var(--off-white);
+  line-height: 1.7;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 5rem 0;
+  background: var(--dark-bg);
+}
+
+.pricing-content {
+  max-width: 800px;
+  margin: 3rem auto 0;
+}
+
+.pricing-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--off-white);
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.pricing-table {
+  background: var(--darker-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--dark-border);
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.pricing-row:last-child {
+  border-bottom: none;
+}
+
+.pricing-label {
+  font-weight: 600;
+  color: var(--off-white);
+}
+
+.pricing-value {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.pricing-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.15rem;
+  color: var(--off-white);
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .consignment-hero__title {
+    font-size: 2.5rem;
+  }
+
+  .consignment-hero__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .consignment-intro__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .consignment-hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .consignment-hero__title {
+    font-size: 2rem;
+  }
+
+  .consignment-hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .pricing-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-lg {
+    width: 100%;
+    max-width: 300px;
+  }
+}
