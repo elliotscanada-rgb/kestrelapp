@@ -14,7 +14,12 @@ const LINKS = {
     { label: 'FAQ', href: '/faq' },
     { label: 'Careers', href: '#' },
   ],
-  Legal: ['Privacy Policy', 'Terms of Service', 'AML Policy', 'Regulatory Disclosures'],
+  Legal: [
+    { label: 'Privacy Policy', href: '#privacy' },
+    { label: 'Terms of Service', href: '#terms' },
+    { label: 'AML Policy', href: '#aml' },
+    { label: 'Regulatory Disclosures', href: '#regulatory' },
+  ],
 }
 
 export default function Footer() {
@@ -52,18 +57,11 @@ export default function Footer() {
             <div key={heading} className="footer__col">
               <h4>{heading}</h4>
               <ul>
-                {items.map((item, idx) => {
-                  const isObj = typeof item === 'object'
-                  return (
-                    <li key={idx}>
-                      {isObj ? (
-                        <Link to={item.href}>{item.label}</Link>
-                      ) : (
-                        <a href="#home">{item}</a>
-                      )}
-                    </li>
-                  )
-                })}
+                {items.map((item, idx) => (
+                  <li key={idx}>
+                    <Link to={item.href}>{item.label}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}
