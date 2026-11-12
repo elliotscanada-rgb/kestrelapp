@@ -322,7 +322,7 @@ export default function GoldConsignment() {
             and profitable gold consignment.
           </p>
           <div className="cta-buttons">
-            <a href="https://kerselsecuritycompany.vercel.app/login" className="btn btn-primary btn-lg">Get Started Today</a>
+            <a href="https://kerselsecuritycompany.vercel.app/" className="btn btn-primary btn-lg">Get Started Today</a>
             <Link to="/contact" className="btn btn-outline btn-lg">Speak to a Specialist</Link>
           </div>
         </div>

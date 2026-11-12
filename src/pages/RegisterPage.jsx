@@ -114,7 +114,7 @@ export default function RegisterPage() {
             </form>
 
             <p className="auth-contact">
-              Already have an account? <a href="https://kerselsecuritycompany.vercel.app/login">Sign in here</a>
+              Already have an account? <a href="https://kerselsecuritycompany.vercel.app/">Sign in here</a>
             </p>
           </div>
         </div>

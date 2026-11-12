@@ -71,7 +71,7 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <a href="https://kerselsecuritycompany.vercel.app/login" className="btn btn-primary navbar__cta" onClick={close}>
+          <a href="https://kerselsecuritycompany.vercel.app/" className="btn btn-primary navbar__cta" onClick={close}>
             Login
           </a>
         </nav>
@@ -115,7 +115,7 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <a href="https://kerselsecuritycompany.vercel.app/login" className="btn btn-primary" onClick={close}>
+          <a href="https://kerselsecuritycompany.vercel.app/" className="btn btn-primary" onClick={close}>
             Login
           </a>
         </nav>
