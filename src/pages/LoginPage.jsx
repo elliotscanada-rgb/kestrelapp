@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import './AuthPages.css'
 
@@ -51,7 +52,7 @@ export default function LoginPage() {
                 <label>
                   <input type="checkbox" /> Remember me
                 </label>
-                <a href="#">Forgot password?</a>
+                <Link to="#forgot" className="btn-link">Forgot password?</Link>
               </div>
 
               <button type="submit" className="btn btn-primary btn-block">
@@ -64,13 +65,13 @@ export default function LoginPage() {
             </div>
 
             <p className="auth-signup">
-              <a href="/register" className="btn btn-outline btn-block">
+              <Link to="/register" className="btn btn-outline btn-block">
                 Create Account
-              </a>
+              </Link>
             </p>
 
             <p className="auth-contact">
-              Need help? <a href="/contact">Contact our team</a>
+              Need help? <Link to="/contact">Contact our team</Link>
             </p>
           </div>
         </div>

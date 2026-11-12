@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import './FAQPage.css'
 
@@ -185,7 +186,7 @@ export default function FAQPage() {
         <div className="container">
           <h2>Still have questions?</h2>
           <p>Contact our specialists for personalized guidance on your specific assets.</p>
-          <a href="/contact" className="btn btn-primary btn-lg">Get in Touch</a>
+          <Link to="/contact" className="btn btn-primary btn-lg">Get in Touch</Link>
         </div>
       </section>
     </div>

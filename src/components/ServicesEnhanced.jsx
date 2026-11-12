@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Gallery from './Gallery'
 import './ServicesEnhanced.css'
 
@@ -42,7 +43,7 @@ export default function ServicesEnhanced() {
                   <li>Global Institutional Buyers</li>
                   <li>Market-Leading Prices</li>
                 </ul>
-                <a href="/gold-consignment" className="btn btn-primary">Learn More</a>
+                <Link to="/gold-consignment" className="btn btn-primary">Learn More</Link>
               </div>
               <div className="service-gallery">
                 {serviceImages.gold.map((img, idx) => (
@@ -72,7 +73,7 @@ export default function ServicesEnhanced() {
                   <li>Antwerp & Dubai Networks</li>
                   <li>Parcel Lot Expertise</li>
                 </ul>
-                <a href="/diamond-consignment" className="btn btn-primary">Explore Diamonds</a>
+                <Link to="/diamond-consignment" className="btn btn-primary">Explore Diamonds</Link>
               </div>
             </div>
           </div>
@@ -92,7 +93,7 @@ export default function ServicesEnhanced() {
                   <li>Sotheby's & Christie's Access</li>
                   <li>White-Glove Service</li>
                 </ul>
-                <a href="/jewelry-consignment" className="btn btn-primary">View Services</a>
+                <Link to="/jewelry-consignment" className="btn btn-primary">View Services</Link>
               </div>
               <div className="service-gallery">
                 {serviceImages.jewelry.map((img, idx) => (

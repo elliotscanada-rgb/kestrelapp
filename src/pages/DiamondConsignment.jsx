@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FaGem, FaCertificate, FaLock, FaGlobe } from 'react-icons/fa'
 import Gallery from '../components/Gallery'
 import './ConsignmentPages.css'
@@ -27,7 +28,7 @@ export default function DiamondConsignment() {
           <p className="consignment-hero__subtitle">
             Certified grading, global market access, and confidential placement for rough and polished diamonds
           </p>
-          <a href="#contact" className="btn btn-primary btn-lg">Consign Your Diamonds</a>
+          <Link to="/contact" className="btn btn-primary btn-lg">Consign Your Diamonds</Link>
         </div>
       </section>
 
@@ -416,8 +417,8 @@ export default function DiamondConsignment() {
             evaluation, secure custody, and access to global diamond markets.
           </p>
           <div className="cta-buttons">
-            <a href="#contact" className="btn btn-primary btn-lg">Start Your Diamond Consignment</a>
-            <a href="/contact" className="btn btn-outline btn-lg">Request a Valuation</a>
+            <Link to="/contact" className="btn btn-primary btn-lg">Start Your Diamond Consignment</Link>
+            <Link to="/contact" className="btn btn-outline btn-lg">Request a Valuation</Link>
           </div>
         </div>
       </section>

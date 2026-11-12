@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FaClock, FaEye, FaShip, FaHandHolding } from 'react-icons/fa'
 import Gallery from '../components/Gallery'
 import './ConsignmentPages.css'
@@ -27,7 +28,7 @@ export default function JewelryConsignment() {
           <p className="consignment-hero__subtitle">
             Authenticated consignment and global placement for estate jewellery, designer pieces, and luxury timepieces
           </p>
-          <a href="#contact" className="btn btn-primary btn-lg">Consign Your Jewellery</a>
+          <Link to="/contact" className="btn btn-primary btn-lg">Consign Your Jewellery</Link>
         </div>
       </section>
 
@@ -344,8 +345,8 @@ export default function JewelryConsignment() {
             confidential consignment service.
           </p>
           <div className="cta-buttons">
-            <a href="#contact" className="btn btn-primary btn-lg">Begin Consignment</a>
-            <a href="/contact" className="btn btn-outline btn-lg">Get a Free Appraisal</a>
+            <Link to="/contact" className="btn btn-primary btn-lg">Begin Consignment</Link>
+            <Link to="/contact" className="btn btn-outline btn-lg">Get a Free Appraisal</Link>
           </div>
         </div>
       </section>

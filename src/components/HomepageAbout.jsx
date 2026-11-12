@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './HomepageAbout.css'
 
 export default function HomepageAbout() {
@@ -31,7 +32,7 @@ export default function HomepageAbout() {
                 <div className="highlight-label">Countries Served</div>
               </div>
             </div>
-            <a href="/about" className="btn btn-primary">Learn More About Us</a>
+            <Link to="/about" className="btn btn-primary">Learn More About Us</Link>
           </div>
           <div className="about-image">
             <img 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Hero.css'
 
 export default function Hero() {
@@ -22,8 +23,8 @@ export default function Hero() {
         </p>
 
         <div className="hero__actions">
-          <a href="#contact" className="btn btn-primary">Submit a Consignment</a>
-          <a href="#services" className="btn btn-outline">Our Services</a>
+          <Link to="/contact" className="btn btn-primary">Submit a Consignment</Link>
+          <Link to="/services" className="btn btn-outline">Our Services</Link>
         </div>
 
         {/* Stats bar */}
@@ -43,9 +44,9 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <a href="#about" className="hero__scroll" aria-label="Scroll down">
+      <div className="hero__scroll" aria-label="Scroll down">
         <span />
-      </a>
+      </div>
     </section>
   )
 }

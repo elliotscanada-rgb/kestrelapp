@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Carousel from './Carousel'
 import './HeroCarousel.css'
 
@@ -51,8 +52,8 @@ export default function HeroCarousel() {
               Gold, Diamonds, Fine Jewellery & Luxury Watches - Secure. Transparent. Profitable.
             </p>
             <div className="hero-carousel__buttons">
-              <a href="#services" className="btn btn-primary btn-lg">Explore Services</a>
-              <a href="/contact" className="btn btn-outline btn-lg">Get Started</a>
+              <Link to="/services" className="btn btn-primary btn-lg">Explore Services</Link>
+              <Link to="/contact" className="btn btn-outline btn-lg">Get Started</Link>
             </div>
           </div>
         </div>

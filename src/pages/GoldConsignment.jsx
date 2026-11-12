@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FaShieldAlt, FaCertificate, FaTruck, FaChartLine } from 'react-icons/fa'
 import Gallery from '../components/Gallery'
 import './ConsignmentPages.css'
@@ -27,7 +28,7 @@ export default function GoldConsignment() {
           <p className="consignment-hero__subtitle">
             Secure, transparent, and globally-connected consignment for gold bullion, bars, coins, and refined dore
           </p>
-          <a href="/contact" className="btn btn-primary btn-lg">Start Your Consignment</a>
+          <Link to="/contact" className="btn btn-primary btn-lg">Start Your Consignment</Link>
         </div>
       </section>
 
@@ -321,8 +322,8 @@ export default function GoldConsignment() {
             and profitable gold consignment.
           </p>
           <div className="cta-buttons">
-            <a href="/contact" className="btn btn-primary btn-lg">Get Started Today</a>
-            <a href="/contact" className="btn btn-outline btn-lg">Speak to a Specialist</a>
+            <Link to="/contact" className="btn btn-primary btn-lg">Get Started Today</Link>
+            <Link to="/contact" className="btn btn-outline btn-lg">Speak to a Specialist</Link>
           </div>
         </div>
       </section>

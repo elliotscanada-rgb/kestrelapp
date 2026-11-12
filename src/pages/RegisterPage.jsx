@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import './AuthPages.css'
 
@@ -113,7 +114,7 @@ export default function RegisterPage() {
             </form>
 
             <p className="auth-contact">
-              Already have an account? <a href="/login">Sign in here</a>
+              Already have an account? <Link to="/login">Sign in here</Link>
             </p>
           </div>
         </div>

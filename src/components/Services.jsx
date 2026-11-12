@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Services.css'
 
 const SERVICES = [
@@ -87,9 +88,9 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <a href="/contact" className="btn btn-outline services__card-btn">
+              <Link to="/contact" className="btn btn-outline services__card-btn">
                 Enquire Now
-              </a>
+              </Link>
             </div>
           ))}
         </div>

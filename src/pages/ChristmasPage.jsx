@@ -102,7 +102,7 @@ export default function ChristmasPage() {
             Find the perfect precious gift for your loved ones this Christmas
           </p>
           <div className="christmas-hero__cta">
-            <a href="#categories" className="btn btn-primary btn-lg">Explore Gifts</a>
+            <Link to="#categories" className="btn btn-primary btn-lg">Explore Gifts</Link>
           </div>
         </div>
       </section>
