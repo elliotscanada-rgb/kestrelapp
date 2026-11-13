@@ -53,7 +53,7 @@ export default function HeroCarousel() {
             </p>
             <div className="hero-carousel__buttons">
               <Link to="/services" className="btn btn-primary btn-lg">Explore Services</Link>
-              <a href="https://kerselsecuritycompany.vercel.app/" className="btn btn-outline btn-lg">Get Started</a>
+              <a href="https://app.kestrelsecuritycompany.com/" className="btn btn-outline btn-lg">Get Started</a>
             </div>
           </div>
         </div>

@@ -65,7 +65,7 @@ export default function LoginPage() {
             </div>
 
             <p className="auth-signup">
-              <a href="https://kerselsecuritycompany.vercel.app/" className="btn btn-outline btn-block">
+              <a href="https://app.kestrelsecuritycompany.com/" className="btn btn-outline btn-block">
                 Create Account
               </a>
             </p>
